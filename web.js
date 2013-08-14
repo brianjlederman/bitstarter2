@@ -13,3 +13,6 @@
       width: 960 px;}    
     p.lead {
       padding-top:15px; 
+  </style>
+ </head>
+</html>
