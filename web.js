@@ -1,14 +1,15 @@
-var express = require('express');
-
-var app = express.createServer(express.logger());
-
-app.get('/', function(request, response) {
-  var fs = require('fs');
-  var buf = new Buffer(fs.readFileSync('index.html'), 'utf-8');
-  response.send(buf.toString());
-});
-
-var port = process.env.PORT || 5000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title> My First Bitstarter</title>
+  <link type="text/css" rels="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fbootstrap-2.3.2.css">
+  <style type="text/css">
+    body {
+      padding-top: 20px;
+      padding-bottom:40px;
+    }
+    .container {
+      width: 960 px;}    
+    p.lead {
+      padding-top:15px; 
